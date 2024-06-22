@@ -34,8 +34,9 @@ class ProdutoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {//dd($request);
-        $request->all();
+    {
+        //dd($request->all());
+        Produto::create(['nome'->$request->nome, 'fornecedor'->$request->fornecedor]);
     }
 
     /**

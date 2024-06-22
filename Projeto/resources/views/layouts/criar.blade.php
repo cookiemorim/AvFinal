@@ -8,7 +8,7 @@
 <body>
     <form action= "{{route('produto.store')}}" metod='post'>
         @csrf
-        <label>Nobel</label>
+        <label>Nome produto</label>
         <input type='text' name='nome' id='nome'>
         <label for="">Fornecedor</label>
         <input type="text" name="fornecedor" id="fornecedor">
