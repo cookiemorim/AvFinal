@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route:: get('ver/{id}', [ProdutoController::class, 'show']);
+
 Route::get('/criar',[ProdutoController::class,'create']);
 Route::post('/criar',[ProdutoController::class,'store'])->name('produto.store');
 
