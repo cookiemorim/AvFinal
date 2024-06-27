@@ -46,7 +46,7 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function show(Produto $produto)
+    public function show($id)
     {
         $produto= Produto::findOrFail($id);
         return view('layouts.show', ['produto' =>$produto]);
