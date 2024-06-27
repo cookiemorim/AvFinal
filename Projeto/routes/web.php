@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 Route:: get('ver/{id}', [ProdutoController::class, 'show']);
 
+Route::get('/editar/{id}', [ProdutoController::class, 'edit']);
+oute::post('/editar/{id}', [ProdutoController::class, 'update'])->name('alterar_produto');
+
 Route::get('/criar',[ProdutoController::class,'create']);
 Route::post('/criar',[ProdutoController::class,'store'])->name('produto.store');
 
