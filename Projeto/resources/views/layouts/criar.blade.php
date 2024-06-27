@@ -6,12 +6,12 @@
     <title>Cadatrar produtos</title>
 </head>
 <body>
-    <form action= "{{route('produto.store')}}" metod='post'>
+    <form action= "{{route('produto.store')}}" method='post'>
         @csrf
         <label>Nome produto</label>
-        <input type='text' name='nome' id='nome'>
+        <input type='text' name="nome" id="nome">
         <label for="">Fornecedor</label>
         <input type="text" name="fornecedor" id="fornecedor">
-         <button type="submit">Cadastrar</button>
+         <button>Cadastrar</button>
 </body>
 </html>

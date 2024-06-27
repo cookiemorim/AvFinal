@@ -36,7 +36,8 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         //dd($request->all());
-        Produto::create(['nome'->$request->nome, 'fornecedor'->$request->fornecedor]);
+        Produto::create(['nome'=>$request->nome, 'fornecedor'=>$request->fornecedor]);
+        return 'cadrastado com sucesso';
     }
 
     /**
