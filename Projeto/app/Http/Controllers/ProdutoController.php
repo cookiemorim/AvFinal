@@ -58,9 +58,10 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function edit(Produto $produto)
+    public function edit($id)
     {
-        //
+        $produto= Produto::findOrFail($id);
+        return view('layouts.editar', ['produto' =>$produto]);
     }
 
     /**
