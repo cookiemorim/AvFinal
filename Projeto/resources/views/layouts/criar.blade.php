@@ -12,6 +12,6 @@
         <input type='text' name="nome" id="nome">
         <label for="">Fornecedor</label>
         <input type="text" name="fornecedor" id="fornecedor">
-         <button>Cadastrar</button>
+         <button>Cadastrar</button> 
 </body>
 </html>

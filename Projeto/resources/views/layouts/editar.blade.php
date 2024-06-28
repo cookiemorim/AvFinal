@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route ('alterar_prodduto', ['id'=>$produto->id)}}"></form>
+    <form action="{{route ('alterar_prodduto', ['id'=>$produto->id)}}"> </form>
 </body>
 </html>

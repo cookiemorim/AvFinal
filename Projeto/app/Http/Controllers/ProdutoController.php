@@ -63,7 +63,7 @@ class ProdutoController extends Controller
         $produto= Produto::findOrFail($id);
         return view('layouts.editar', ['produto' =>$produto]);
     }
-
+      
     /**
      * Update the specified resource in storage.
      *
